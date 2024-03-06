@@ -38,8 +38,3 @@ with Diagram("Ecommerce Search", filename="ai_enabled_audio"):
 
     another_data_source - apigateway >> get_match_lambda
     dynamodb - get_match_lambda >>  kendra
-   
-    
-
-
-    
