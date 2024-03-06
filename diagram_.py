@@ -19,8 +19,9 @@ st.markdown("""
 st.write("")
 if __name__ == "__main__":
     st.header('Azure Architecture (Diagram as Code)', divider='rainbow')
+    st.write("take a look at original image here:","https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/ecommerce-search")
     st.selectbox(
-        'service',
+        'Select a cloud hyperscalar:',
         ('AWS', 'Azure'))
 
 
@@ -32,7 +33,7 @@ if __name__ == "__main__":
 
     selected_option = st.empty()
     def display_image():
-        print(selected_option)
+       
         if selected_option:
             image_path = image_paths.get(selected_option)
             if image_path:
@@ -43,7 +44,7 @@ if __name__ == "__main__":
     selected_option = st.selectbox("Select an architecture diagram", list(image_paths.keys()))
 
     # Create a button
-    button = st.button("Open Image")
+    button = st.button("View architecture diagram")
 
     # Display image on button click
     if button:

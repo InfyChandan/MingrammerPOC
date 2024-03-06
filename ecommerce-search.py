@@ -1,4 +1,4 @@
-from diagrams import Diagram,Cluster,Node
+from diagrams import Diagram,Node
 from diagrams.azure.web import AppServices
 from diagrams.azure.ml import BotServices
 from diagrams.azure.web import Search
